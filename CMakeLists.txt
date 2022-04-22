@@ -3,11 +3,11 @@ project(METIS C)
 
 set(SHARED TRUE CACHE BOOL "build a shared library")
 
-if(MSVC)
-  set(METIS_INSTALL FALSE)
-else()
+#if(MSVC)
+#  set(METIS_INSTALL FALSE)
+#else()
   set(METIS_INSTALL TRUE)
-endif()
+#endif()
 
 # Configure libmetis library.
 if(SHARED)
