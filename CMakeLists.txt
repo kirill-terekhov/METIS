@@ -50,4 +50,4 @@ link_directories(${CMAKE_INSTALL_PREFIX}/lib)
 # Recursively look for CMakeLists.txt in subdirs.
 #add_subdirectory("build/xinclude")
 add_subdirectory("libmetis")
-add_subdirectory("programs")
+#add_subdirectory("programs")
