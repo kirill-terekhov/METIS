@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(METIS C)
 
-set(SHARED FALSE CACHE BOOL "build a shared library")
+set(SHARED TRUE CACHE BOOL "build a shared library")
 
 if(MSVC)
   set(METIS_INSTALL FALSE)
@@ -39,6 +39,7 @@ include(./conf/gkbuild.cmake)
 # i.e., the -I equivalent
 #include_directories(build/xinclude)
 include_directories(${GKLIB_PATH}/include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
 
 # List of paths that the compiler will search for library files.
